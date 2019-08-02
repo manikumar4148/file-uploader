@@ -1,0 +1,19 @@
+<app-main></app-main>
+<br>
+  <div align="center" style="left: 500px" class="col-md-3">
+    <div class="card min-height-350">
+        <div class="card-body">
+            <label class="upload-button">
+                <input type="file" ngFileSelect [options]="options" (uploadOutput)="onUploadOutput($event)" [uploadInput]="uploadInput" multiple>
+             
+              </label>
+      </div>
+      <div class="card-footer">
+        <button type="button" class="btn btn-info" (click)="startUpload()">Upload</button>
+      </div>
+  </div>
+  
+      <!-- <button type="button" class="start-upload-btn" (click)="startUpload()">
+        Upload
+      </button>
+     -->
